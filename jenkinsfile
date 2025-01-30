@@ -1,7 +1,8 @@
 pipeline{
     agent any
     Stages{
-      stage('A'){
+      stage('A')
+        {
           steps{
                 git branch: 'main', credentialsId: 'ebad3e47-c5cc-4fa9-863a-dd2da3db6b39', url: 'https://github.com/Swapnil40414/devops-projects.git'
             }
